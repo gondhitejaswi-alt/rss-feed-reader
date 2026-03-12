@@ -1,0 +1,108 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#141414;
+color:white;
+padding:40px;
+}
+
+/* Header */
+
+header{
+text-align:center;
+margin-bottom:40px;
+}
+
+header h1{
+font-size:48px;
+color:#e50914;
+letter-spacing:2px;
+}
+
+header p{
+color:#bbb;
+margin-top:10px;
+}
+
+/* Search box */
+
+.search-box{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-bottom:40px;
+}
+
+.search-box input{
+padding:12px;
+width:400px;
+border:none;
+border-radius:5px;
+font-size:16px;
+}
+
+.search-box button{
+padding:12px 20px;
+background:#e50914;
+border:none;
+color:white;
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.search-box button:hover{
+background:#ff1e28;
+transform:scale(1.05);
+}
+
+/* Feed grid */
+
+#feed{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+gap:20px;
+}
+
+/* Feed cards */
+
+.item{
+background:#1f1f1f;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+
+.item:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.8);
+}
+
+.item h3{
+color:#e50914;
+margin-bottom:10px;
+}
+
+.item p{
+font-size:14px;
+color:#ccc;
+margin-bottom:15px;
+}
+
+.item a{
+color:white;
+text-decoration:none;
+background:#e50914;
+padding:8px 12px;
+border-radius:4px;
+font-size:14px;
+}
+
+.item a:hover
